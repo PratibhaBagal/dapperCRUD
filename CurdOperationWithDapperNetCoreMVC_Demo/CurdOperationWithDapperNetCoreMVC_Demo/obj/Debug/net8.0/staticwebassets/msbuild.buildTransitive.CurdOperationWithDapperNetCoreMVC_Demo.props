@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CurdOperationWithDapperNetCoreMVC_Demo.props" />
+</Project>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurdOperationWithDapperNetCoreMVC_Demo", "CurdOperationWithDapperNetCoreMVC_Demo\CurdOperationWithDapperNetCoreMVC_Demo.csproj", "{AEF6D3B2-F1FA-4A2F-9BB2-5B5C618EE76E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEF6D3B2-F1FA-4A2F-9BB2-5B5C618EE76E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF6D3B2-F1FA-4A2F-9BB2-5B5C618EE76E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF6D3B2-F1FA-4A2F-9BB2-5B5C618EE76E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF6D3B2-F1FA-4A2F-9BB2-5B5C618EE76E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A6FA182-EAFC-4506-8B01-931A25C211F6}
+	EndGlobalSection
+EndGlobal

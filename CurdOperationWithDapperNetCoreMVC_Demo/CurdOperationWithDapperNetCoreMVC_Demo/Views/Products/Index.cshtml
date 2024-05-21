@@ -1,0 +1,44 @@
+﻿@model IEnumerable<CurdOperationWithDapperNetCoreMVC_Demo.Models.ProductsModel>
+
+
+
+@{
+    
+    ViewData["Title"] = "Index";
+
+}
+
+<h4 class="text-capitalize">List of products</h4>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary rounded-0"><i class="fa-solid fa-plus"></i> Add New</a>
+</p>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.ProductName)</th>
+            <th>@Html.DisplayNameFor(model => model.Price)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductDescription)</th>
+            <th>@Html.DisplayNameFor(model => model.CreatedOn)</th>
+            <th>@Html.DisplayNameFor(model => model.UpdateOn)</th>
+            <th>Action(s)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.ProductName)</td>
+                <td>@Html.DisplayFor(modelItem => item.Price)</td>
+                <td>@Html.DisplayFor(modelItem => item.ProductDescription)</td>
+                <td>@Html.DisplayFor(modelItem => item.CreatedOn)</td>
+                <td>@Html.DisplayFor(modelItem => item.UpdateOn)</td>
+                <td>
+                    <a href="@Url.Action("Details", "Products", new { id = item.ProductId })" class="btn btn-sm btn-info"><i class="fa-solid fa-eye"></i>Details</a>
+                    <a href="@Url.Action("Edit", "Products", new { id = item.ProductId })" class="btn btn-sm btn-primary"><i class="fa-solid fa-pen-to-square"></i>Edit</a>
+                    <a href="@Url.Action("Delete", "Products", new { id = item.ProductId })" class="btn btn-sm btn-danger"><i class="fa-solid fa-trash"></i>Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
